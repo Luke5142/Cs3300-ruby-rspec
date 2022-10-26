@@ -17,15 +17,29 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  str = "Hello, "
+  return str.concat(name)
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  if s.empty?
+    return false
+  end
+  return !(s =~ /^[AEIOUaeiou\W]/)
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  if !!(s ~= /[2-9a-zA-Z\s]/)
+   return fasle
+  end
+
+
+
+  if s.to_i(2) % 4 == 0
+    return true
+  else
+    return false
+  end
 end
 
 # Part 3
