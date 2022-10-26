@@ -3,15 +3,15 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  return arr.sum
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  return arr.max(2).sum
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  return arr.combination(2).any? {|x, y| x + y == n}
 end
 
 # Part 2
